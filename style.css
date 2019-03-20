@@ -14,6 +14,10 @@ body{
   max-width:100%
 }
 
+div{
+  display: block;
+}
+
 nav w3-sidebar, nav w3-collapse, nav w3-animate-left{
   z-index:3;
   width:270px;
@@ -99,6 +103,31 @@ nav a:hover {
   color: rgb(166, 141, 149);
 }
 
+@media screen and (max-width: 1000px) {
+/* start of large tablet styles */
+nav {
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 231,232);
+  overflow-x: hidden;
+  padding-top: 0;
+}
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
+}
+
 /*---------------------------------------------NAV BAR END!-----------------------------------------*/
 
 
@@ -162,6 +191,15 @@ hr{
   width: 50%;
 }
 
+@media screen and (max-width: 1000px) {
+/* start of large tablet styles */
+.main {
+  margin-left: 3rem; /* adding 3rems of space between nav and main content */
+  margin-right: 3rem;
+  padding-top: 6rem;
+}
+}
+
 /*---------------------------------------------ABOUT!-----------------------------------------*/
 
 .item-about{
@@ -173,12 +211,12 @@ hr{
 .item-about img{
   width: 100%;
   height: 100%;
-  max-width: 80%;
+  max-width: 85%;
   object-fit: cover;
 }
 
 .item-about p, .item-about h4{
-  margin-left: -1rem;
+  margin-left: 1rem;
 }
 
 .item-about h4{
@@ -188,7 +226,7 @@ hr{
 }
 
 .item-about p{
-  max-width: 75%;
+  max-width: 100%;
 }
 
 /*---------------------------------------------ABOUT END!-----------------------------------------*/
@@ -478,3 +516,34 @@ footer{
 }
 
 /*---------------------------------------------MAIN CONTENT END!-----------------------------------------*/
+
+
+/*---------------------------------------------RESPONSIVENESS!-----------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+/* start of large tablet styles */
+
+.two-thirds{
+  width: 100%;
+}
+
+/*make the item one third width of div parent*/
+.one-third{
+  width: 100%;
+}
+
+/*make the item half width of div parent*/
+.half{
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
+}
