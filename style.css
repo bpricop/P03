@@ -1,0 +1,480 @@
+body,h1,h2,h3,h4,h5,h6,p{
+  font-family: "Raleway", sans-serif;
+}
+
+p{
+  line-height: 1.5rem;
+}
+
+h4{
+  color:#73757a;
+}
+
+body{
+  max-width:100%
+}
+
+nav w3-sidebar, nav w3-collapse, nav w3-animate-left{
+  z-index:3;
+  width:270px;
+}
+
+a { 
+   color: #906377;
+   -webkit-transition: color 0.3s ease-in;
+   -moz-transition: color 0.3s ease-in;
+   -o-transition: color 0.3s ease-in;
+   -ms-transition: color 0.3s ease-in;
+   transition: color 0.3s ease-in;
+   text-decoration: none;
+} 
+
+a:hover {
+   color: #888777;
+}
+
+figure{
+  margin:0.5rem;
+}
+
+figcaption{
+  color: #73757a;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+
+li{
+  line-height: 1.5rem;
+}
+
+/*---------------------------------------------NAV BAR!-----------------------------------------*/
+nav {
+  height: 100%;
+  width: 16rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 231,232);
+  overflow-x: hidden;
+  padding-top: 4rem;
+}
+
+/*Bianca Pricop text*/
+nav h3{
+  padding-left: 1.6rem;
+  margin-bottom: 0;
+  color: rgb(166, 141, 149);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.52rem;
+}
+
+/*Designer|programmer text*/
+nav h4{
+  padding-left: 1.6rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: rgb(115,117,119);
+  font-weight: lighter;
+}
+
+/*nav bar links*/
+nav a {
+  padding: 0.6rem 0.6rem 0.6rem 1.6rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #73757a;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/*nav link icons*/
+nav i{
+  margin-right: 0.7rem;
+}
+
+nav a:hover {
+  color: rgb(166, 141, 149);
+}
+
+/*---------------------------------------------NAV BAR END!-----------------------------------------*/
+
+
+/*---------------------------------------------MAIN CONTENT!-----------------------------------------*/
+.main {
+  margin-left: 19rem; /* adding 3rems of space between nav and main content */
+  margin-right: 3rem;
+  padding-top: 6rem;
+}
+
+.main h2{
+  color: rgb(166, 141, 149);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.main h3{
+  color: rgb(166, 141, 149);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.main h4{
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+hr{
+  background-color: #c4c4c4; 
+  height: 1px; 
+  border: 0; 
+}
+
+.container{
+  display: flex;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*make the item two thirds width of div parent*/
+.two-thirds{
+  width: 66.66%;
+}
+
+/*make the item one third width of div parent*/
+.one-third{
+  width: 33.33%;
+}
+
+/*make the item half width of div parent*/
+.half{
+  width: 50%;
+}
+
+/*---------------------------------------------ABOUT!-----------------------------------------*/
+
+.item-about{
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.item-about img{
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  object-fit: cover;
+}
+
+.item-about p, .item-about h4{
+  margin-left: -1rem;
+}
+
+.item-about h4{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.item-about p{
+  max-width: 75%;
+}
+
+/*---------------------------------------------ABOUT END!-----------------------------------------*/
+
+
+/*---------------------------------------------SKILLS!-----------------------------------------*/
+
+.item-skills-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-skills-container h4{
+  margin-bottom: 0.5rem;
+}
+
+.item-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item-skills img{
+  width: 80px;
+  height: 80px;
+  margin: 1rem;
+}
+
+/*---------------------------------------------SKILLS END!-----------------------------------------*/
+
+/*---------------------------------------------PORTFOLIO!-----------------------------------------*/
+
+.portfolio-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+}
+
+.item-portfolio-container{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.item-portfolio{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.item-portfolio img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(115,115,115,1);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(115,115,115,1);
+  box-shadow: 0px 0px 19px 0px rgba(115,115,115,1);
+}
+
+/*---------------------------------------------PORTFOLIO END!-----------------------------------------*/
+
+
+/*---------------------------------------------CONTACT!-----------------------------------------*/
+
+.contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-item-container{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.contact-item{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-item i{
+  color:rgb(166, 141, 149);
+  transition: 0.5s ease;
+}
+
+.contact-item i:hover{
+  color:rgb(115,117,119);
+}
+
+/*---------------------------------------------CONTACT END!-----------------------------------------*/
+
+
+/*---------------------------------------------FOOTER!-----------------------------------------*/
+
+footer{
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/*---------------------------------------------FOOTER END!-----------------------------------------*/
+
+
+/*---------------------------------------------PORTFOLIO ITEMS!-----------------------------------------*/
+
+/*-------HEADER!-------*/
+
+.header-container{
+  display: flex;
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+/*-------HEADER END!-------*/
+
+/*-------CONTEXT!-------*/
+
+.context-objective-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+}
+
+.context-objective-item-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.context-objective-item{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.context-icon{
+  color: #73757a;
+}
+
+/*-------CONTEXT END!-------*/
+
+/*-------OBJECTIVE!-------*/
+
+
+
+/*-------OBJECTIVE END!-------*/
+
+/*-------PROCESS!-------*/
+
+.process-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  object-fit: contain;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.process-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-label h4{
+  font-size:0.8rem;
+}
+
+.icon-label img{
+  width:50px;
+  height:50px;
+}
+
+.process-image{
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.process-image-full{
+  object-fit: contain;
+}
+
+.process-image-half-screen{
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.process-image-half-screen2{
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.process-container p{
+  margin-bottom: 0;
+  min-width: 50%;
+}
+
+.space-between{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*-------PROCESS END!-------*/
+
+/*-------CHALLENGE!-------*/
+
+.challenge-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.challenge-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge-item p{
+  margin-top: 0;
+}
+
+/*-------CHALLENGE END!-------*/
+
+/*-------LEARNING & INSIGHTS!-------*/
+
+.learning-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.learning-item{
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------LEARNING & INSIGHTS END!-------*/
+
+
+/*---------------------------------------------PORTFOLIO ITEMS END!-----------------------------------------*/
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.horizontal-centered{
+  align-items: center;
+}
+
+.vertical-centered{
+  justify-content: center;
+}
+
+.centered{
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text{
+  text-align: center;
+}
+
+.linkimage{
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.linkimage:hover{
+  opacity: 0.7;
+}
+
+/*---------------------------------------------MAIN CONTENT END!-----------------------------------------*/

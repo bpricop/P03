@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P03 - Style Guide</title>
+  <link href="styleguide.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <h1>P03 - Style Guide</h1>     
+      <a href="#interactive_elements">INTERACTIVE ELEMENTS</a>
+      <a href="#text_elements">TEXT ELEMENTS</a>
+      <a href="#combined_elements">COMBINED ELEMENTS</a>
+      <a href="menu.html">PRODUCT LISTING TEMPLATE</a>
+      <a href="cart.html">CHECKOUT TEMPLATE</a>
+      <a href="#citations">CITATIONS</a>
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <section class="element">
+      <h3>In-text link</h3>
+
+       <h4>CSS selector:</h4>
+      <p>a</p>
+
+      <h4>Sample code:</h4>
+      <xmp><a href="https://www.youtube.com/">Go to Youtube</a></xmp>
+
+      <h4>Rendered element:</h4>
+
+      <a href="https://www.youtube.com/">Go to Youtube</a>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
+
+      <h4>Sample code:</h4>
+      <xmp><a href="#About"><i class="fa fa-user fa-fw"></i>About</a></xmp>
+      <xmp><a href="BiancaPricop_Resume.pdf" target="_blank"><i class="fa fa-download fa-fw"></i>Resume</a></xmp>
+
+      <h4>Rendered element:</h4>
+   
+        <a href="#About"><i class="fa fa-user fa-fw"></i>About</a>
+        <br><br>
+        <a href="BiancaPricop_Resume.pdf" target="_blank"><i class="fa fa-download fa-fw"></i>Resume</a>
+
+    </section>
+
+    <!-- code for submit button found at: https://www.w3schools.com/html/html_forms.asp -->
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>CSS selector:</h4>
+      <p>button, input[type=submit]</p>
+
+      <h4>Sample code:</h4>
+      <xmp><button>Hello</button></xmp>
+
+      <h4>Rendered element:</h4>
+      <button>Hello</button>
+    </section>
+
+    <!-- code for input found at: https://www.w3schools.com/html/html_forms.asp -->
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.input-text, label, form</p>
+
+      <h4>Sample code:</h4>
+      <xmp> <form>
+        <label for="input-text">Input Text</label>
+        <input type="text" id="input-text">
+      </form></xmp>
+
+      <h4>Rendered element:</h4>
+      <form>
+        <label for="input-text">Input Text</label>
+        <input type="text" id="input-text">
+      </form>
+    </section>
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.input-text, label, form</p>
+
+      <h4>Sample code:</h4>
+      <xmp><form>
+        <div class="card-container">
+        <input type="radio" name="food" id="cake" value="cake" checked>
+        <label for="cake">Cake</label><br>
+        <input type="radio" name="food" id="pie" value="pie" checked>
+        <label for="pie">Pie</label><br>
+      </div>
+      </form></xmp>
+
+      <h4>Rendered element:</h4>
+
+      <form>
+        <div class="card-container">
+        <input type="radio" name="food" id="cake" value="cake" checked>
+        <label for="cake">Cake</label><br>
+        <input type="radio" name="food" id="pie" value="pie" checked>
+        <label for="pie">Pie</label><br>
+      </div>
+      </form>
+    </section>
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.linkimage, a, img</p>
+
+      <h4>Sample code:</h4>
+      <xmp><a href="https://www.youtube.com/" ><img src="2-1.png" alt="image" class="linkimage"></a></xmp>
+
+      <h4>Rendered element:</h4>
+
+      <a href="https://www.youtube.com/" ><img src="2-1.png" alt="image" class="linkimage"></a>
+    </section>
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+
+      <h4>CSS selector:</h4>
+      <p>h1, h2, h3, h4</p>
+
+      <h4>Sample code:</h4>
+      <xmp><h2>Heading 1 </h2>
+      <h3>Heading 2 </h3>
+      <h4>Heading 3 </h4>
+      <h5>Heading 4</h5></xmp>
+
+      <h4>Rendered element:</h4>
+
+      <h2>Heading 1 </h2>
+      <h3>Heading 2 </h3>
+      <h4>Heading 3 </h4>
+      <h5>Heading 4</h5>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+
+      <h4>CSS selector:</h4>
+      <p>p</p>
+
+      <h4>Sample code:</h4>
+      <xmp><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></xmp>
+
+      <h4>Rendered element:</h4>
+
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies, nisl eu laoreet consectetur, erat mi cursus urna, vitae efficitur nunc urna at massa. Duis condimentum diam vel odio egestas maximus. In auctor nulla ac nisi ullamcorper, non blandit felis ultricies. Fusce malesuada eget diam eu tincidunt. Mauris nec nulla venenatis, fringilla nibh ac, dapibus ante. Sed quis nunc pharetra, malesuada risus semper, blandit neque. Quisque dignissim, dui eget ultricies elementum, lorem leo pellentesque lacus, quis euismod arcu ligula nec lorem. Suspendisse vestibulum iaculis erat accumsan euismod. In convallis eros eu aliquam ultrices. Pellentesque ac euismod velit. Nunc venenatis orci quis nisi porttitor interdum. </p>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+
+      <h4>CSS selector:</h4>
+      <p>ol, li</p>
+
+      <h4>Sample code:</h4>
+      <xmp><ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol></xmp>
+
+      <h4>Rendered element:</h4>
+
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Content</h2>
+
+    <section class="element">
+      <h3>Bio</h3>
+      <p>
+            I'm currently studying Interactive Systems and Design in the Interactive Arts and Technology (SIAT) program at Simon Fraser University concentrating in design and interactive systems. Prior to studying at SFU, I studied Business and Commerce at Douglas College for over 2 years which taught me practical business knowledge that can be applied to SIAT.
+          </p> 
+
+          <p>
+          My goal is to create aesthetically pleasing designs and experiences for websites and applications. Creating enjoyable experiences for people and making an impact when users interact with my work is important for me. I strive to keep learning and improving my skills to work in the UX/UI design field.
+          </p>
+
+  <h3>Portfolio Piece #1</h3>
+  <a href="neurodetect.html">Neuro-Detect</a>
+
+  <h3>Portfolio Piece #2</h3>
+  <a href="echoolab_videos.html">Echoo Lab</a>
+   
+  </section>
+
+</section>
+<!-- // COMBINED ELEMENTS SECTION -->
+
+</body>
+</html>
