@@ -9,10 +9,12 @@ p{
 
 h1, h2, h3{
   color:rgb(166, 141, 149);
+  text-transform: uppercase;
 }
 
 h4, h5{
   color:#73757a;
+  text-transform: uppercase;
 }
 
 body{
