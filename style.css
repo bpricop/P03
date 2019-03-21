@@ -59,6 +59,7 @@ nav {
   padding-top: 4rem;
 }
 
+/*keep the name and title in the same div for nav responsiveness*/
 .name-title{
   display: block;
 }
@@ -102,7 +103,7 @@ nav a:hover {
   color: rgb(166, 141, 149);
 }
 
-/*hide hamburger menu when not on smaller screen*/
+/*hide hamburger menu when on desktop and large tablet sized screen*/
 .top-icon{
   display: none;
 }
@@ -130,7 +131,7 @@ nav a {
   text-decoration: none;
   font-size: 1rem;
   color: #73757a;
-  display: flex;
+  display: block;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   float: right;
@@ -165,6 +166,25 @@ nav h4{
 @media screen and (max-width: 767px) {
 /* start of medium tablet styles */
 
+.top-nav a{display: none;}
+  .top-nav a.top-icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-nav.responsive {position: fixed;}
+  .top-nav.responsive a.top-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav.responsive a {
+    float: center;
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -181,11 +201,29 @@ nav {
   padding-top: 0;
 }
 
-.top-icon{
-  position: absolute;
+nav h4{
+  display: none;
+}
+
+.top-nav a{display: none;}
+  .top-nav a.top-icon {
+    float: right;
+    display: block;
+    padding-top: 1.3rem;
+  }
+
+  .top-nav.responsive {position: fixed;}
+  .top-nav.responsive a.top-icon {
+    position: absolute;
     right: 0;
     top: 0;
-}
+  }
+  .top-nav.responsive a {
+    float: center;
+    display: block;
+    text-align: center;
+  }
+
 }
 
 /*---------------------------------------------NAV BAR END!-----------------------------------------*/
@@ -260,6 +298,15 @@ hr{
 }
 }
 
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+.main {
+  margin-left: 1.5rem; /* adding 3rems of space between nav and main content */
+  margin-right: 1.5rem;
+  padding-top: 4.5rem;
+}
+}
+
 /*---------------------------------------------ABOUT!-----------------------------------------*/
 
 .item-about{
@@ -288,6 +335,13 @@ hr{
 
 .item-about p{
   max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+/* start of large tablet styles */
+.item-about img {
+ 
+}
 }
 
 /*---------------------------------------------ABOUT END!-----------------------------------------*/

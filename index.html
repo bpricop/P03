@@ -9,7 +9,7 @@
 
 <body>
 
-<nav>
+<nav class="top-nav" id="top-nav-menu">
   <div class="name-title">
     <h3>Bianca Pricop</h3>
     <h4>Designer | Programmer</h4>
@@ -19,6 +19,7 @@
   <a href="#Portfolio"><i class="fa fa-laptop fa-fw"></i>Portfolio</a>
   <a href="#Contact"><i class="fa fa-envelope fa-fw"></i>Contact</a>
   <a href="BiancaPricop_Resume.pdf" target="_blank"><i class="fa fa-download fa-fw"></i>Resume</a>
+  <a href="javascript:void(0);" class="top-icon" onclick="myFunction()"><i class="fa fa-bars fa-fw"></i></a>
 </nav>
 
 <div class="main">
@@ -140,5 +141,18 @@
       <p>&copy; Bianca Pricop, 2019</p>
     </div>
   </footer>
+
+<!-- script for hamburger menu when screen becomes smaller size -->
+  <script>
+    function myFunction() {
+    var x = document.getElementById("top-nav-menu");
+      if (x.className === "top-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "top-nav";
+      }
+    }
+  </script>
+
 </body>
 </html>
