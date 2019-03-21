@@ -44,7 +44,7 @@ figure{
 figcaption{
   color: #73757a;
   padding-top: 0.5rem;
-  text-align: left;
+  text-align: center;
 }
 
 li{
@@ -115,6 +115,21 @@ nav {
   background-color: rgb(230, 231,232);
   overflow-x: hidden;
   padding-top: 0;
+}
+
+nav a {
+  padding: 0.6rem 0.6rem 0.6rem 1.6rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #73757a;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+/*nav link icons*/
+nav i{
+  margin-right: 0.7rem;
 }
 }
 
@@ -212,6 +227,7 @@ hr{
   width: 100%;
   height: 100%;
   max-width: 85%;
+  min-width: 50%;
   object-fit: cover;
 }
 
@@ -433,6 +449,39 @@ footer{
 .space-between{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+/* start of large tablet styles */
+.process-image{
+  width: 100%;
+  height: 100%;
+  
+  object-fit: contain;
+}
+.process-image-half-screen{
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.process-image-half-screen2{
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+/* start of phone styles */
+
 }
 
 /*-------PROCESS END!-------*/
