@@ -298,6 +298,13 @@ hr{
 }
 }
 
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+.container{
+  display: block;
+  }
+}
+
 @media screen and (max-width: 479px) {
 /* start of phone styles */
 .main {
@@ -318,7 +325,7 @@ hr{
 .item-about img{
   width: 100%;
   height: 100%;
-  max-width: 85%;
+  max-width: 90%;
   min-width: 50%;
   object-fit: cover;
 }
@@ -339,8 +346,18 @@ hr{
 
 @media screen and (max-width: 1000px) {
 /* start of large tablet styles */
-.item-about img {
- 
+}
+
+@media screen and (max-width: 767px) {
+/* start of medium tablet styles */
+.item-about img{
+  max-width: 330px;
+  max-height: 450px;
+  align-items: center;
+}
+
+.item-about p, .item-about h4{
+  margin-left: 0rem;
 }
 }
 
@@ -674,7 +691,7 @@ footer{
 
 /*make the item one third width of div parent*/
 .one-third{
-  width: 100%;
+  width: 50%;
 }
 
 /*make the item half width of div parent*/
@@ -685,7 +702,10 @@ footer{
 
 @media screen and (max-width: 767px) {
 /* start of medium tablet styles */
-
+.one-third{
+  width: 100%;
+  align-items: center;
+}
 }
 
 @media screen and (max-width: 479px) {
