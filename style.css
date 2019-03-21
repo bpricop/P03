@@ -18,11 +18,6 @@ div{
   display: block;
 }
 
-nav w3-sidebar, nav w3-collapse, nav w3-animate-left{
-  z-index:3;
-  width:270px;
-}
-
 a { 
    color: #906377;
    -webkit-transition: color 0.3s ease-in;
@@ -64,6 +59,10 @@ nav {
   padding-top: 4rem;
 }
 
+.name-title{
+  display: block;
+}
+
 /*Bianca Pricop text*/
 nav h3{
   padding-left: 1.6rem;
@@ -103,6 +102,11 @@ nav a:hover {
   color: rgb(166, 141, 149);
 }
 
+/*hide hamburger menu when not on smaller screen*/
+.top-icon{
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
 /* start of large tablet styles */
 nav {
@@ -117,19 +121,44 @@ nav {
   padding-top: 0;
 }
 
+.name-title{
+  display: inline-block;
+}
+
 nav a {
-  padding: 0.6rem 0.6rem 0.6rem 1.6rem;
+  padding: 2rem 0.6rem 0.6rem 1rem;
   text-decoration: none;
   font-size: 1rem;
   color: #73757a;
-  display: block;
+  display: flex;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
+  float: right;
 }
 
 /*nav link icons*/
 nav i{
   margin-right: 0.7rem;
+}
+
+/*Bianca Pricop text*/
+nav h3{
+  padding-left: 1.6rem;
+  margin-bottom: 0;
+  color: rgb(166, 141, 149);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.12rem;
+}
+
+/*Designer|programmer text*/
+nav h4{
+  padding-left: 1.6rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: rgb(115,117,119);
+  font-weight: lighter;
+  font-size: 0.8rem;
 }
 }
 
@@ -140,7 +169,23 @@ nav i{
 
 @media screen and (max-width: 479px) {
 /* start of phone styles */
+nav {
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 231,232);
+  overflow-x: hidden;
+  padding-top: 0;
+}
 
+.top-icon{
+  position: absolute;
+    right: 0;
+    top: 0;
+}
 }
 
 /*---------------------------------------------NAV BAR END!-----------------------------------------*/
@@ -297,9 +342,6 @@ hr{
   width: 300px;
   height: 300px;
   object-fit: contain;
-  -webkit-box-shadow: 0px 0px 19px 0px rgba(115,115,115,1);
-  -moz-box-shadow: 0px 0px 19px 0px rgba(115,115,115,1);
-  box-shadow: 0px 0px 19px 0px rgba(115,115,115,1);
 }
 
 /*---------------------------------------------PORTFOLIO END!-----------------------------------------*/
