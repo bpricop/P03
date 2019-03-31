@@ -87,6 +87,10 @@ nav h4{
   font-weight: lighter;
 }
 
+.nav-items{
+  display: inline-block;
+}
+
 /*nav bar links*/
 nav a {
   padding: 0.6rem 0.6rem 0.6rem 1.6rem;
@@ -128,6 +132,11 @@ nav {
 
 .name-title{
   display: inline-block;
+}
+
+.nav-items{
+  display: inline-block;
+  float: right;
 }
 
 nav a {
@@ -172,6 +181,26 @@ nav h4{
 @media screen and (max-width: 767px) {
 /* start of medium tablet styles */
 
+nav {
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 231,232);
+  padding-top: 0;
+}
+
+.nav-items{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  z-index: 500;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+
 .top-nav a{display: none;}
   .top-nav a.top-icon {
     float: right;
@@ -180,7 +209,10 @@ nav h4{
 }
 
 @media screen and (max-width: 767px) {
-  .top-nav.responsive {position: fixed;}
+  .top-nav.responsive {
+    position: fixed;
+    height: auto;
+  }
   .top-nav.responsive a.top-icon {
     position: absolute;
     right: 0;
@@ -218,7 +250,10 @@ nav h4{
     padding-top: 1.15rem;
   }
 
-  .top-nav.responsive {position: fixed;}
+  .top-nav.responsive {
+    position: fixed;
+    height: auto;
+  }
   .top-nav.responsive a.top-icon {
     position: absolute;
     right: 0;
