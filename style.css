@@ -197,7 +197,8 @@ nav {
   flex-direction: column;
   float: right;
   z-index: 500;
-  margin-top: 3rem;
+  width: 100%;
+  margin-top: -1.2rem;
   padding-bottom: 1rem;
 }
 
@@ -219,7 +220,6 @@ nav {
     top: 0;
   }
   .top-nav.responsive a {
-    float: center;
     display: block;
     text-align: center;
   }
@@ -241,6 +241,16 @@ nav {
 
 nav h4{
   display: none;
+}
+
+.nav-items{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  z-index: 500;
+  width: 100%;
+  margin-top: 0rem;
+  padding-bottom: 1rem;
 }
 
 .top-nav a{display: none;}
