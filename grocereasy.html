@@ -8,17 +8,23 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <body>
-<nav>
-  <h3>Bianca Pricop</h3>
-  <h4>Designer | Programmer</h4>
+<nav class="top-nav" id="top-nav-menu">
+  <div class="name-title">
+    <h3>Bianca Pricop</h3>
+    <h4>Designer | Programmer</h4>
+  </div>
 
-  <a href="index.html"><i class="fa fa-user fa-fw"></i>Main</a>
-  <a href="freshprince.html"><i class="fa fa-arrow-right fa-fw"></i></i>Next Project</a>
-  <a href="echoolab_videos.html"><i class="fa fa-arrow-left fa-fw"></i></i>Previous Project</a>
+  <a href="javascript:void(0);" class="top-icon" onclick="myFunction()"><i class="fa fa-bars fa-fw"></i></a>
+
+  <div class="nav-items">
+    <a href="index.html"><i class="fa fa-user fa-fw"></i>Main</a>
+    <a href="freshprince.html"><i class="fa fa-arrow-right fa-fw"></i></i>Next Project</a>
+    <a href="echoolab_videos.html"><i class="fa fa-arrow-left fa-fw"></i></i>Previous Project</a>
+  </div>
 </nav>
 
 <div class="main">
-  <div class="header-container centered">
+  <div class="header-container centered centered-text">
     <h2>GrocerEasy</h2>
   </div>
 
@@ -99,7 +105,7 @@
       </ul>
 
       <p>
-        I played around with a few ideas, but in the end settled for a grocery shopping to-do list app. I got the idea by observing my mother making shopping lists for herself and forgetting to get the items on her lists. I followed up by looking on the app store to find a similar app targeting grocery shopping and GPS reminders and did not find an app which was made for this purpose. I made sure that the app would meet all the requirements for the project, made my initial sitemap for the application, and a timeline to follow and stay on track to meet the deadline.
+        I played around with a few ideas, but in the end settled for a grocery shopping to-do list app. I made sure that the app would meet all the requirements for the project, made my initial sitemap for the application, and a timeline to follow and stay on track to meet the deadline.
       </p>
 
     <div class="process-item centered-text">
@@ -112,10 +118,10 @@
     </div>
 
       <p>
-        After I began working on the code, I started to see some things that I wanted to change for the application. Originally, the app would have at least three activities such as creating lists, GPS alerts, and adding item favorites to a favorites page. There would be explicit intents to change from one activity screen to another such as going from the main menu page to the “create a list” activity page. Implicit intents would have the app set sound alerts to the user when they are near a store. The app would have data storage local to the app in both preferences and SQLite to store lists, favorites, and reminders. Lastly, it would access the phones hardware such as GPS to track the users’ location, and access the battery status of the phone to turn off GPS when the battery got low. 
+        Originally, the app would have at least three activities such as creating lists, GPS alerts, and adding item favorites to a favorites page. There would be explicit intents to change from one activity screen to another such as going from the main menu page to the “create a list” activity page. Implicit intents would have the app set sound alerts to the user when they are near a store. The app would have data storage local to the app in both preferences and SQLite to store lists, favorites, and reminders. Lastly, it would access the phones hardware such as GPS to track the users’ location, and access the battery status of the phone to turn off GPS when the battery got low. 
       </p>
 
-      <div class="row">
+      <div class="row process-row">
         <div class="process-item half centered-text">
           <figure>
             <img src="sketches.png" class="process-image-half-screen2" alt="Me">
@@ -135,6 +141,50 @@
         </div>
       </div>
 
+      <p>
+        My primary focus while programming the app was making sure that the functionality was smooth and functional and made sure to look for any issues my app might have. For example, when inputting empty strings in any place where the user should create a list, item, or Google map location for reminders, I made alert dialogs to pop-up warning the user that they must input a name or location. I created a more polished UI for GrocerEasy at the very end as it was not the main goal of this project. Here are some of the design iterations I went through of five primary application activities:
+      </p>
+
+      <div class="process-item centered-text">
+        <figure>
+          <img src="iteration 1.png" class="process-image-full" alt="Image showing the first UI iterations of the app UI">
+          <figcaption class="centered-text">
+            Figure 4. First UI iteration of the app
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="iteration 2.png" class="process-image-full" alt="Image showing the second UI iterations of the app UI">
+          <figcaption class="centered-text">
+            Figure 5. Second UI iteration of the app
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="iteration 3.png" class="process-image-full" alt="Image showing the final UI iterations of the app UI">
+          <figcaption class="centered-text">
+            Figure 6. Last UI iteration of the app
+          </figcaption>
+        </figure>
+      </div>
+
+      <p>
+        These are the following features I implemented by the end of the project:
+      </p>
+
+      <ul>
+        <li>List/Item creation </li>
+        <li>Checkbox functionality </li>
+        <li>SQLite Data Storage</li>
+        <li>Polished UI for all activities</li>
+        <li>GPS Location </li>
+        <li>Google API autocomplete search bar </li>
+        <li>Alert reminders </li>
+        <li>List/Item deleting </li>
+        <li>Screen shake detection using accelerometer to start certain activities </li>
+        <li>Alert dialogs showing the user what the app can do when they use the app for the first time </li>
+      </ul>
+
     </div>
   </div>
 
@@ -143,10 +193,17 @@
 
   <div class="challenge-container">
     <div class="challenge-item">
-      <h4>Design complexity</h4>
-      <p>
-        The biggest challenge was to make a logo that would emulate the idea of the research branch, but also not be overly complex in the design. At first, I tackled the problem by trying to make it much too simple, which was not eye-catching at all. It took a few ideations before I created two different logos that were both similar to each other but still had their own unique look. 
-      </p>
+      <h4>SQLite Databases</h4>
+        <p>
+          There were definitely a lot of challenges when it came to programming this app to work the way I had originally intended. One of the biggest challenges was the SQLite database programming as it was a challenge to know when and where exactly to use certain methods, and even learn about methods that were not covered in class. In addition, deleting lists and items was another challenge as I needed to add in a method startActivityForResult in the Java class MyListAdapter inside the onClick method so when I received the result Intent, the callback provided the same request code so that my app could properly identify the result and determine how to handle it. The onActivityResult read the results using a for loop to look through each one and when a list was deleted or added, it would update the view so that the list was changed instantly and show in real time.
+        </p>
+    </div>
+
+    <div class="challenge-item">
+      <h4>GPS alerts</h4>
+        <p>
+          Another challenge was getting the GPS alerts to work properly as I have the location tracking and alerts in a background service so the user does not need to have the app open for them to get reminders. At first I used regular AlertDialogs to handle the reminders, but that did not work for background services and would crash my app. The way I solved this issue was by making the reminder a system alert window instead. To do this I added the permission in the manifest by adding in: “android.permission. SYSTEM_ALERT_WINDOW”. After that I changed the window manager layout parameter of the alert to TYPE_TOAST in the onLocationChanged method in the MyLocation Java class.
+        </p>
     </div>
   </div>
 
@@ -156,7 +213,7 @@
   <div class="learning-container">
     <div class="learning-item">
       <p>
-        I learned a fair amount about how to work with a client. When I would think the logo design was good, they asked for more and it pushed me to create something better than I originally had in mind. In the end this project was all about making the client happy with the final design and keeping an open mind to what would be best for the logo.  
+        As this was the very first Android application I have worked on, I learned a fair bit about how the internal coding and layouts of Android apps work in the real-world. When I first tackled this project I had many expectations and ideas that I wanted to learn how to code and implement in my final app. However, once I started working on it, I quickly realized there were a lot of things I would not be able to learn and have time to do for GrocerEasy. Much of this project involved self-teaching which lead to much time spent figuring out how to do the basic functions that my app needed to have for the project requirements. Had I had more time to work on this project, I might have been able to eventually implement more of the features I had originally planned.  
       </p>
     </div>
   </div>
@@ -167,5 +224,17 @@
     </div>
   </footer>
 </div>
+
+<!-- script for hamburger menu when screen becomes smaller size -->
+  <script>
+    function myFunction() {
+    var x = document.getElementById("top-nav-menu");
+      if (x.className === "top-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "top-nav";
+      }
+    }
+  </script>
 </body>
 </html>
