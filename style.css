@@ -270,7 +270,6 @@ nav h4{
     top: 0;
   }
   .top-nav.responsive a {
-    float: center;
     display: block;
     text-align: center;
   }
@@ -590,7 +589,7 @@ footer{
 }
 
 .process-item{
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
 }
 
@@ -604,8 +603,8 @@ footer{
 }
 
 .process-image{
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   object-fit: contain;
 }
 
@@ -617,7 +616,7 @@ footer{
 .process-image-half-screen{
   width: 100%;
   height: 100%;
-  /*max-height: 200px;*/
+  max-height: 240px;
   object-fit: contain;
 }
 
@@ -714,7 +713,7 @@ footer{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .column{
